@@ -124,7 +124,7 @@ export function Contact() {
                     required
                     maxLength={200}
                     className="input-base"
-                    placeholder="Jane Doe"
+                    placeholder="Jhony Rockets"
                   />
                 </Field>
                 <Field label="Email" htmlFor="email">
@@ -147,7 +147,7 @@ export function Contact() {
                     type="tel"
                     maxLength={50}
                     className="input-base"
-                    placeholder="(555) 555-5555"
+                    placeholder="(240) 555-5555"
                   />
                 </Field>
                 <Field label="I'm interested in" htmlFor="interest">
