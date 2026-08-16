@@ -6,14 +6,19 @@ export function SiteFooter() {
       <div className="mx-auto max-w-7xl px-4 md:px-8">
         <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
           <div>
-            <div className="flex flex-col leading-none">
-              <span className="font-serif text-xl font-bold tracking-wide text-gold">
-                ATH
-              </span>
-              <span className="text-[0.65rem] font-medium uppercase tracking-[0.25em] text-ivory/70">
-                Operations Group
-              </span>
-            </div>
+             <a href="#top" className="flex items-center">
+          <Image
+            src="/images/logo-ath.png"
+            alt="ATH Operations Group"
+            width={60}
+            height={60}
+            priority
+            className="h-auto"
+          />
+          <span className="mt-1 text-[0.65rem] font-medium uppercase tracking-[0.2em] text-ivory/80">
+            Operations Group
+          </span>
+        </a>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-ivory/60">
               Professional staffing, training, and operational solutions across
               the DMV region — building excellence through people, training,
