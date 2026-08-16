@@ -58,7 +58,7 @@ export function Contact() {
           <p className="mt-4 leading-relaxed text-ivory/75">
             Whether you need staffing, training, or on-site management — or
             you&apos;re a professional looking to grow — we&apos;d love to hear
-            from you. Attach your resume and our team will follow up.
+            from you.
           </p>
 
           <div className="mt-10 space-y-5">
@@ -175,33 +175,7 @@ export function Contact() {
                 />
               </Field>
 
-              <div>
-                <span className="mb-1.5 block text-sm font-medium text-charcoal">
-                  Resume{' '}
-                  <span className="font-normal text-muted-foreground">
-                    (PDF or Word, optional)
-                  </span>
-                </span>
-                <label
-                  htmlFor="resume"
-                  className="flex cursor-pointer items-center gap-3 rounded-md border border-dashed border-bronze/50 bg-card px-4 py-3.5 text-sm text-muted-foreground transition-colors hover:border-gold hover:bg-accent/30"
-                >
-                  <UploadCloud className="h-5 w-5 text-bronze" />
-                  <span className="truncate">
-                    {fileName ?? 'Click to upload your resume'}
-                  </span>
-                  <input
-                    id="resume"
-                    name="resume"
-                    type="file"
-                    accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
-                    className="sr-only"
-                    onChange={(e) =>
-                      setFileName(e.target.files?.[0]?.name ?? null)
-                    }
-                  />
-                </label>
-              </div>
+             
 
               {state.status === 'error' && (
                 <p className="text-sm font-medium text-destructive">
